@@ -1,0 +1,32 @@
+<ion-view>
+    <ion-content>
+        <br>
+        <br>
+        <br>
+        <div class="list">
+
+
+            <form name="form" ng-init="required=true" novalidate>
+                <div class="list" >
+                    <label class="item item-input">
+                        <span class="input-label">Email</span>
+                        <input type="email" ng-required="required" ng-model='user2.email'>
+                    </label>
+
+                        <label class="item item-input">
+                            <span class="input-label">Password</span>
+                            <input type="password" ng-required="required" ng-model="user2.pass">
+                        </label>
+                    </div>
+
+
+
+                <button type="submit" class="button  button-stable" ng-click="login(user2)">Login</button>
+                <button class="button button-stable" ui-sref="signUp">Signup</button>
+            </form>
+        </div>
+
+
+
+    </ion-content>
+</ion-view>

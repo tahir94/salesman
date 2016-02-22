@@ -1,0 +1,60 @@
+
+    <div class="bar bar-positive">
+    <h1 class="title">Salesman App</h1>
+    <button class="button button-stable" ng-click="signOut()" ng-show="isLoggedIn"  >Sign Out</button>
+    </div>
+    <br><br><br>
+   
+<br><br><br>
+
+
+
+<button class="button button-calm" ui-sref="dashboard.createCompany" ng-click="me()" ng-show="mani">
+  Create User
+</button>
+
+<button class="button button-calm"  ng-show="mani">
+  Salesman
+</button>
+
+<button class="button button-calm" ng-show="mani">
+  Products
+</button>
+
+
+<div ng-show="!hide_company_input">
+<h1>Welcome to Company</h1>
+
+<div class="list" ng-show="!mani">
+  <label class="item item-input">
+    <span class="input-label">Company Name</span>
+    <input type="text" ng-model="comData.companyName">
+  </label>
+ 
+
+  <!--<div class="list" ng-show="!mani">
+  <label class="item item-input">
+    <span class="input-label">Company Address</span>
+    <input type="text" ng-model="company.companyAddress">
+  </label>
+  
+  
+  <div class="list">
+  <label class="item item-input">
+    <span class="input-label">Products</span>
+    <input type="text" ng-model="company.Products">
+  </label>
+  </div>
+  -->
+  <button class="button button-stable" ng-click="addCompany(comData)" >Add Company</button>
+  
+  
+  </div>
+</div>
+  <!--<div class="list">
+  <label class="item item-input">
+    <span class="input-label">Products</span>
+    <input type="text" ng-model="company.products">
+  </label>
+ -->
+ 

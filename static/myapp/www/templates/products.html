@@ -1,0 +1,39 @@
+<div ng-click="showF=!showF"><a class="button button-calm icon-center ion-plus"></a>
+
+</div>
+
+
+
+<ul class="list"><li class="item" ng-repeat="prd in getData">
+    <div class="list">
+        <div class="item-item-divider">
+            Products
+        </div>
+        <h2>Product Name : {{prd.productName}}</h2>
+        <h2>Prodcu Weight: {{prd.productWeight}}</h2>
+        <h2>Product Price: {{prd.productPrice}}</h2>
+    </div>
+</li></ul>
+<div class="list" ng-show="showF">
+  <label class="item item-input">
+    <span class="input-label">Product Name</span>
+    <input type="text" ng-model="product.productName">
+  </label>
+  <div class="list">
+  <label class="item item-input">
+    <span class="input-label">product Weight</span>
+    <input type="number" ng-model="product.productWeight">
+  </label>
+  
+  <div class="list">
+  <label class="item item-input">
+    <span class="input-label">Product Price</span>
+    <input type="number" ng-model="product.productPrice">
+  </label>
+  </div>
+   <button class="button button-positive" ng-click="submitProducts(product)">
+  Submit Products
+</button>
+  
+  
+  

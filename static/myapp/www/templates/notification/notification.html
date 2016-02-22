@@ -1,0 +1,36 @@
+<style>
+  map {
+    width: 75%;
+    height: 75% !important;
+  }
+
+  .scroll, .mapWrap {
+    height: 100%;
+  }
+</style>
+<ion-view>
+
+  <div class="list list-inset">
+
+    <div class="item">
+
+     <h2>Product Name      : {{notification.productName}}</h2>
+      <h2>Product Weight   : {{notification.productWeight}}</h2>
+      <h2>Product Price    : {{notification.productPrice}}</h2>
+      <h2>Product Quantity : Rs.{{notification.quantity}}</h2>
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <div class="mapWrap"  data-tap-disabled="true">
+    <map center="{{notification.lat}},{{notification.long}}" zoom="15">
+      <!-- ngRepeat: pos in positions -->
+      <marker position="{{notification.lat}},{{notification.long}}"></marker>
+    </map>
+  </div>
+</ion-view>

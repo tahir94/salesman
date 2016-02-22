@@ -1,0 +1,25 @@
+<form name="formOne" novalidate ng-init="required=true">
+
+    <label class="item item-input">
+        <span class="input-label">user Name</span>
+        <input type="text" ng-required="required" ng-model="saleman.userName">
+    </label>
+
+
+    <label class="item item-input">
+        <span class="input-label">user Last Name</span>
+        <input type="text" ng-required="required" ng-model="saleman.userLastName">
+    </label>
+
+
+
+    <label class="item item-input">
+        <span class="input-label">user Password</span>
+        <input type="password" ng-required="required" ng-model="saleman.userPass">
+    </label>
+
+
+    <button class="button button-assertive" ng-disabled="formOne.$invalid" ng-click="submitUser(saleman)">
+        Submit User
+    </button>
+</form>

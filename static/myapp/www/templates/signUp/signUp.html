@@ -1,0 +1,43 @@
+
+
+<ion-view >
+<ion-content>
+    <br><br><br>
+ <form method="post" >   
+<div class="list">
+  <label class="item item-input">
+    <span class="input-label">First Name</span>
+    <input type="text" ng-model="user.name">
+  </label>
+  <div class="list">
+  <label class="item item-input">
+    <span class="input-label">Last Name</span>
+    <input type="text" ng-model="user.fname">
+  </label>
+  
+  <div class="list">
+  <label class="item item-input">
+    <span class="input-label">Email</span>
+    <input type="email" ng-model="user.email">
+  </label>
+  
+  <div class="list">
+  <label class="item item-input">
+    <span class="input-label">Password</span>
+    <input type="password" ng-model="user.pass">
+  </label>
+  
+  <div class="list">
+  <label class="item item-input">
+    <span class="input-label">Age</span>
+    <input type="number" ng-model="user.age">
+  </label>
+ </div>
+  <button class="button button-positive" ng-click="submit(user)">
+  Submit
+</button>
+</form>
+ 
+  
+</ion-content>
+  </ion-view>

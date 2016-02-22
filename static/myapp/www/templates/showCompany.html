@@ -1,0 +1,37 @@
+<!--<div style="margin:0 auto; display:block; width:100%; background-color:#00b36b;"><h1>welcome to {{getData.companyName}}
+  Company :</h1></div>-->
+<div class="row">
+
+  <div class="col-75">
+    <button class="button button-calm button-block" ng-click="createUser()" ui-sref="dashboard.createUser">
+      create user
+    </button>
+    <button class="button button-calm button-block" ng-click="showSalesman()" ui-sref="dashboard.salesman">
+      Salesman
+    </button>
+    <button class="button button-calm button-block" ng-click="products()" ui-sref="dashboard.products">
+      Products
+    </button>
+  </div>
+
+
+  <div class="list col-25" style="height: 90vh!important;">
+    <a class="item item-icon-left" href="#">
+      <i class="icon ion-ios-bell"></i>
+      Notifications
+      <span ng-if="notifications.length" class="badge badge-assertive">{{notifications.length}}</span>
+    </a>
+    <a class="item item-icon-left" href="#" ng-click="showNotification(notification)" ng-repeat="notification in notifications">
+      <p>Name : {{notification.productName}}</p>
+      <p>Weight : {{notification.productWeight}}</p>
+      <p>Price : Rs. {{notification.productPrice}}</p>
+      <p>Quantity : {{notification.quantity}}</p>
+    </a>
+    <a class="item item-icon-left" href="#" ng-click="showNotification(notification)" ng-repeat="notification in mongoNotifications">
+      <p>Name : {{notification.productName}}</p>
+      <p>Weight : {{notification.productWeight}}</p>
+      <p>Price : Rs. {{notification.productPrice}}</p>
+      <p>Quantity : {{notification.quantity}}</p>
+    </a>
+  </div>
+</div>

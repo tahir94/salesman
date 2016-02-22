@@ -1,0 +1,23 @@
+{
+  "name": "newdemo2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start":"node ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angularfire": "^1.1.3",
+    "body-parser": "^1.14.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "firebase": "^2.4.1",
+    "mongodb": "^2.1.4",
+    "mongoose": "^4.3.7",
+    "nodemon": "^1.8.1",
+    "q": "^1.4.1"
+  }
+}
